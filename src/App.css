@@ -1,0 +1,61 @@
+/* Centering the content */
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Style for the header */
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Heading styling */
+  .App-header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+    animation: textGlow 2s ease-in-out infinite alternate;
+  }
+  
+  /* Optional subheading styling */
+  .App-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.05em;
+  }
+  
+  /* Animation for fading in the content */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Text glow effect */
+  @keyframes textGlow {
+    from {
+      text-shadow: 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px #ff7e5f, 0 0 20px #feb47b;
+    }
+    to {
+      text-shadow: 2px 4px rgba(0, 0, 0, 0.3), 0 0 15px #ff7e5f, 0 0 30px #feb47b, 0 0 45px #ff7e5f;
+    }
+  }
+  
